@@ -1,0 +1,94 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./public"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "public"
+      },
+      "host": "localhost",
+      "open": false,
+      "tunnel": false,
+      "online": false,
+      "logConnections": true
+    },
+
+    "static": {
+      "src": "static",
+      "dest": "./"
+    },
+
+    "js": {
+      "src": "js",
+      "dest": "js",
+      "entries": {
+        "app": [
+          "./app.js"
+        ]
+      },
+      "extensions": ["js", "json"],
+      "plugins": [],
+      "extractSharedJs": false
+    },
+    "css": {
+      "src": "scss",
+      "dest": "css",
+      "autoprefixer": {
+        "browsers": ["last 3 versions"]
+      },
+      "sсss": {
+        "indentedSyntax": true,
+        "outputStyle": "compact"
+      },
+      "extensions": [
+        "sass",
+        "scss",
+        "css"
+      ]
+    },
+
+    "html": {
+      "src": "pug",
+      "dest": "./",
+      "dataFile": "data/_menu.json",
+      "htmlmin": {
+        "collapseWhitespace": false
+      },
+      "extensions": [
+        "pug",
+        "json"
+      ],
+      "excludeFolders": [
+        "components",
+        "data",
+        "layouts",
+        "pages",
+        "partials"
+      ]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "fonts": {
+      "src": "fonts",
+      "dest": "fonts",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg", "otf"]
+    },
+    "svgSprite": {
+      "src": "icons",
+      "dest": "images",
+      "extensions": ["svg"]
+    },
+
+    "production" : {
+      "rev": false
+    }
+  }
+}

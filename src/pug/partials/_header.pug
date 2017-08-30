@@ -1,0 +1,52 @@
+header.header.bg-white
+	nav.navbar.clearfix
+		.navbar-left
+			.back-title.to-news
+				a(href='javascript:void(0)', onclick='$.fn.fullpage.moveTo(\'news\', 0);') News
+			.page-title.market-pulse
+				span Market Pulse
+			.page-title.team
+				span Team
+			.page-title.q-and-a
+				span Q&A
+			.page-title.contact
+				span Contact
+			.blog-categories
+				ul.categories.list-inline
+					li.active
+						a(href='javascript:void(0)', data-category='category') Category
+					li
+						a(href='javascript:void(0)', data-category='search') Search
+			.blog-filter
+				ul.filter.list-inline
+					li.active
+						a(href='javascript:void(0)', data-filter='.ico-management') ICO Management
+					li
+						a(href='javascript:void(0)', data-filter='.cryptocurrency') Cryptocurrency
+					li
+						a(href='javascript:void(0)', data-filter='.analytics') Analytics
+					li
+						a(href='javascript:void(0)', data-filter='.business') Business
+		.navbar-right
+			ul.list-inline
+				li
+					a(href='#news') Blog
+				li
+					a(href='#market-pulse') Extended Market Pulse
+				li
+					a(href='#q-and-a') Q&A
+				li
+					a(href='#contact-us') Contact Us
+		.search-field
+			#searchField
+				.field
+					input#searchInput(type='text', name='search', placeholder='What would you like to find?')
+				.microphone
+					a(href='javascript:void(0)')
+						img(src='../images/icons/microphone.svg', alt='close button')
+				.close-search
+					a(href='javascript:void(0)')
+						img(src='../images/icons/close.svg', alt='close button')
+				.notification#speach
+				.notification#warning
+	///.navbar

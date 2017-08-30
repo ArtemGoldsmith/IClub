@@ -1,0 +1,23 @@
+@mixin font-face($font-name, $file-name, $font-style: normal, $font-weight: normal) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('../fonts/#{$file-name}.otf');
+
+    font-style: $font-style;
+    font-weight: $font-weight;
+  }
+}
+
+@include font-face('Helvetica', 'HelveticaNeueCyr-Black', normal, 900)
+@include font-face('Helvetica', 'HelveticaNeueCyr-BlackItalic', italic, 900)
+@include font-face('Helvetica', 'HelveticaNeueCyr-Bold', normal, 700)
+@include font-face('Helvetica', 'HelveticaNeueCyr-BoldItalic', italic, 700)
+@include font-face('Helvetica', 'HelveticaNeueCyr-Medium', normal, 600)
+@include font-face('Helvetica', 'HelveticaNeueCyr-Roman', normal, 400)
+@include font-face('Helvetica', 'HelveticaNeueCyr-Italic', italic, 400)
+@include font-face('Helvetica', 'HelveticaNeueCyr-Light', normal, 300)
+@include font-face('Helvetica', 'HelveticaNeueCyr-LightItalic', italic, 300)
+@include font-face('Helvetica', 'HelveticaNeueCyr-Thin', normal, 200)
+@include font-face('Helvetica', 'HelveticaNeueCyr-ThinItalic', italic, 200)
+@include font-face('Helvetica', 'HelveticaNeueCyr-UltraLight', normal, 100)
+@include font-face('Helvetica', 'HelveticaNeueCyr-UltraLightItalic', italic, 100)

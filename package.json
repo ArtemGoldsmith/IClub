@@ -1,0 +1,80 @@
+{
+  "name": "ds-starter-kit",
+  "version": "1.0.0",
+  "description": "ds-starter-kit",
+  "engines": {
+    "node": ">=0.12.0 ~5.9.0",
+    "npm": ">=2.14.12 ~3.7.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "gulp": "gulp",
+    "development": "gulp",
+    "production": "gulp production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.visavix.com/OneSource/specs-html.git"
+  },
+  "keywords": [
+    "ds-starter-kit"
+  ],
+  "author": "dartsimple",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "browser-sync": "^2.18.8",
+    "compression": "1.6.1",
+    "css-loader": "^0.26.1",
+    "del": "2.2.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-changed": "1.3.0",
+    "gulp-css-retina": "0.0.2",
+    "gulp-cssnano": "2.1.1",
+    "gulp-data": "1.2.1",
+    "gulp-gh-pages": "0.5.4",
+    "gulp-htmlmin": "1.3.0",
+    "gulp-if": "2.0.0",
+    "gulp-image": "^2.7.5",
+    "gulp-imagemin": "2.4.0",
+    "gulp-img-retina": "0.0.4",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "2.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "1.2.2",
+    "gulp-responsive": "^2.7.0",
+    "gulp-retinize": "^0.1.0",
+    "gulp-rev": "7.0.0",
+    "gulp-rev-napkin": "0.1.0",
+    "gulp-rev-replace": "0.4.3",
+    "gulp-sass": "2.2.0",
+    "gulp-sequence": "0.4.5",
+    "gulp-sizereport": "1.1.3",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-svgstore": "6.0.0",
+    "gulp-uglify": "1.5.3",
+    "gulp-util": "3.0.7",
+    "gulp-watch": "4.3.5",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.26.0",
+    "jade-loader": "^0.8.0",
+    "lodash": "^4.17.4",
+    "morgan": "1.7.0",
+    "node-sass": "^4.3.0",
+    "open": "0.0.5",
+    "require-dir": "0.3.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "1.12.14",
+    "webpack-dev-middleware": "1.5.1",
+    "webpack-hot-middleware": "2.10.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^4.0.0"
+  }
+}

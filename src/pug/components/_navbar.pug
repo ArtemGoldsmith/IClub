@@ -1,0 +1,9 @@
+mixin navbar(obj, name, url)
+	ul
+		each item in obj
+			li
+				a(href=item.url)
+					=item.name
+	///.navbar-nav
+
++navbar(header, "name", "url")

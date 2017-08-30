@@ -1,0 +1,15 @@
+doctype html
+//- Global variables
+- var page
+block vars
+//- Template
+html(lang="en")
+	head
+		include ../partials/_head
+	body
+		.main-wrapper(class=page.name + page.count)
+			block header
+			block sidebar
+			block main
+			block customizer
+			block footer
