@@ -23,10 +23,10 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2196f3">
     <link href="css/template.css" rel="stylesheet">
   </head>
-  <body data-page="index">
+  <body data-page="contact">
     <div class="main-wrapper">
-      <div class="submain-wrapper" data-page="index">
-        <header class="header bg-white" data-page="index">
+      <div class="submain-wrapper" data-page="contact">
+        <header class="header bg-white" data-page="contact">
           <nav class="navbar clearfix">
             <div class="navbar-left">
               <div class="back-title to-news"><a href="news.html" data-type="page-transition">News</a></div>
@@ -71,7 +71,7 @@
           </nav>
           <!--/.navbar-->
         </header>
-        <aside class="sidebar" data-page="index">
+        <aside class="sidebar" data-page="contact">
           <div class="navbar-left">
             <button class="navbar-toggle" id="menu-button" type="button"><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand clearfix" href="/"><img src="./images/logotype.svg"><span class="description">Your Edge in Cryptocurrency Ecosystem</span></a>
           </div>
@@ -96,7 +96,7 @@
           </div>
           <div class="left" id="sidebar-navigation">
             <ul>
-              <li><a class="active" href="index.html" data-type="page-transition"><span></span></a>
+              <li><a href="index.html" data-type="page-transition"><span></span></a>
                 <div class="navigation-tooltip left">Homepage</div>
               </li>
               <li><a href="membership.html" data-type="page-transition"><span></span></a>
@@ -122,63 +122,37 @@
         </aside>
         <div class="section-wrapper">
           <div class="section">
-            <div class="text-center pt-120">
-              <h1 class="h1">
-                ICO Investment
-                <strong>Advisory</strong>
-              </h1>
-              <div class="intro">Free access to premium research & analytics, early IOU trading and advanced risk-management</div>
-              <div class="promo">
-                <ul>
-                  <li><span>500 Customers</span></li>
-                  <li><span>$2M Under Managment</span></li>
-                  <li><span>300% ROI p.a.</span></li>
-                  <li><span>12 Successful Deals</span></li>
-                </ul>
-              </div>
-              <div class="join icon"><a href="javascript:void(0)">Join Public Group</a></div>
-              <div class="info-slider owl-carousel owl-theme">
-                <div class="item">
-                  <div class="image"><img src="./images/info-slide1.png" alt="image"></div>
-                  <div class="text"><span>
-                      Only 3 days left to join DS Pre-Sale ICO. 30% 30-day ROI.
-                      <a href="javascript:void(0)">Join</a>
-                      today</span></div>
+            <div class="content-wrapper">
+              <div class="contact-us clearfix">
+                <div class="logotype"><img src="./images/logotype-small.svg" alt="logotype">
+                  <div class="place"><span>USA, New York</span></div>
                 </div>
-                <div class="item">
-                  <div class="image"><img src="./images/info-slide2.png" alt="image"></div>
-                  <div class="text"><span>
-                      IOU exchange now active with 4 seats remaining.
-                      <a href="javascript:void(0)">Sign Up</a>
-                      now!</span></div>
-                </div>
-                <div class="item">
-                  <div class="image"><img src="./images/info-slide3.png" alt="image"></div>
-                  <div class="text"><span>
-                      IClub exclusive membership bidding rounds open Sep 1, 17.
-                      <a class="border-b" href="javascript:void(0)">Complete Application</a>
-                      form before deadline.</span></div>
-                </div>
-                <div class="item">
-                  <div class="image"><img src="./images/info-slide1.png" alt="image"></div>
-                  <div class="text"><span>
-                      Only 3 days left to join DS Pre-Sale ICO. 30% 30-day ROI.
-                      <a href="javascript:void(0)">Join</a>
-                      today</span></div>
-                </div>
-                <div class="item">
-                  <div class="image"><img src="./images/info-slide2.png" alt="image"></div>
-                  <div class="text"><span>
-                      IOU exchange now active with 4 seats remaining.
-                      <a href="javascript:void(0)">Sign Up</a>
-                      now!</span></div>
-                </div>
-                <div class="item">
-                  <div class="image"><img src="./images/info-slide3.png" alt="image"></div>
-                  <div class="text"><span>
-                      IClub exclusive membership bidding rounds open Sep 1, 17.
-                      <a class="border-b" href="javascript:void(0)">Complete Application</a>
-                      form before deadline.</span></div>
+                <form class="contact-form" data-toggle="validator" role="form">
+                  <div class="form-group has-feedback">
+                    <input class="form-control" id="inputName" name="Name" type="text" required data-error="This field is required">
+                    <label class="control-label" for="inputName">Name</label>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <input class="form-control" id="inputPhone" name="Phone" type="phone" required data-error="This field is required">
+                    <label class="control-label" for="inputPhone">Phone</label>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <input class="form-control" id="inputEmail" name="Email" type="email" required data-error="Email address is incorrect">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group has-feedback">
+                    <textarea class="form-control" id="inputMessage" name="Message" required data-error="This field is required"></textarea>
+                    <label class="control-label" for="inputName">Message</label>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <button type="submit">Send</button>
+                </form>
+                <div class="amazing-project">
+                  <h2>Let's Create Amazing Project...</h2>
+                  <div class="text">iClub 2017</div>
                 </div>
               </div>
             </div>

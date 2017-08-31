@@ -4,7 +4,7 @@ module.exports = function() {
     loop: false,
     items: 3,
     nav: true,
-    navText: ["<img src='../images/icons/left-arrow.svg'>","<img src='../images/icons/right-arrow.svg'>"],
+    navText: ["<img src='./images/icons/left-arrow.svg'>","<img src='./images/icons/right-arrow.svg'>"],
     dots: false
   });
 };

@@ -1,0 +1,703 @@
+.section
+	.top-rating.clearfix.mt-150
+		.rating
+			.currency
+				.image
+					img(src='./images/icons/bitcoin.svg', alt='currency')
+				span.name BTC
+			.values
+				.price-dollar
+					span $3204.36
+				.price-dollar-new.positive
+					span $780
+				.price-currency
+					span.name BTC
+					|
+					|
+					span.price 386,45125623
+			.chart-container
+				canvas#chart-bitcoin
+		.rating
+			.currency
+				.image
+					img.top-3(src='./images/icons/ethereum.svg', alt='currency')
+				span.name ETH
+			.values
+				.price-dollar
+					span $262.37
+				.price-dollar-new.positive
+					span $780
+				.price-currency
+					span.name ETH
+					|
+					|
+					span.price 120,45125623
+			.chart-container
+				canvas#chart-ethereum
+		.rating
+			.currency
+				.image
+					img(src='./images/icons/litecoin.svg', alt='currency')
+				span.name LTC
+			.values
+				.price-dollar
+					span $45.40
+				.price-dollar-new.negative
+					span $25
+				.price-currency
+					span.name LTC
+					|
+					|
+					span.price 855,45125623
+			.chart-container
+				canvas#chart-litecoin
+		.rating
+			.currency
+				.image
+					img(src='./images/icons/xem.svg', alt='currency')
+				span.name XEM
+			.values
+				.price-dollar
+					span $188.92
+				.price-dollar-new.positive
+					span $7
+				.price-currency
+					span.name XEM
+					|
+					|
+					span.price 85,45125623
+			.chart-container
+				canvas#chart-xem
+		.rating
+			.currency
+				.image
+					img(src='./images/icons/xmr.svg', alt='currency')
+				span.name XMR
+			.values
+				.price-dollar
+					span $188.92
+				.price-dollar-new.positive
+					span $7
+				.price-currency
+					span.name XMR
+					|
+					|
+					span.price 10,45125623
+			.chart-container
+				canvas#chart-xmr
+	.strategy.tab-panels
+		strong Investment Strategy
+		ul.list-inline
+			li.active
+				a(href='javascript:void(0)', data-type='conservative') Conservative
+			li
+				a(href='javascript:void(0)', data-type='moderate') Moderate
+			li
+				a(href='javascript:void(0)', data-type='aggressive') Aggressive
+		.tabs.pb-50
+			.tab.active.currency-table#conservative
+				table#conservative-table
+					thead
+						tr
+							th Company
+							th Token Type
+							th ICO Price
+							th Cash-Out Pre-Sale
+							th Cash-Out Public
+							th All-Time ROI
+					tbody
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company1.svg', alt='company')
+								.name
+									span Digital Developers Fund
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/wings.svg', alt='token type')
+								.name
+									span Wings
+							td.ico-price
+								.dollar-price
+									span $2658.55
+								.divider
+								.currency-price
+									span BTC 1.45686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company2.svg', alt='company')
+								.name
+									span SkyWay
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/qtum.svg', alt='token type')
+								.name
+									span QTUM
+							td.ico-price
+								.dollar-price
+									span $3684.55
+								.divider
+								.currency-price
+									span BTC 55.4545645
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company3.svg', alt='company')
+								.name
+									span MyBit
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/darcus.svg', alt='token type')
+								.name
+									span Darcus
+							td.ico-price
+								.dollar-price
+									span $560.60
+								.divider
+								.currency-price
+									span BTC 0.00686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.negative 5%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company4.svg', alt='company')
+								.name
+									span Hive Project
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/waves.svg', alt='token type')
+								.name
+									span Waves
+							td.ico-price
+								.dollar-price
+									span $10 000
+								.divider
+								.currency-price
+									span BTC 368.55129876
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company5.svg', alt='company')
+								.name
+									span Bowhead Health
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/adtoken.svg', alt='token type')
+								.name
+									span adToken
+							td.ico-price
+								.dollar-price
+									span $2658.55
+								.divider
+								.currency-price
+									span BTC 1.45686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.negative 2%
+				a.extended-table(href='javascript:void(0)') Extended Market Pulse
+			.tab.currency-table#moderate
+				table#moderate-table
+					thead
+						tr
+							th Company
+							th Token Type
+							th ICO Price
+							th Cash-Out Pre-Sale
+							th Cash-Out Public
+							th All-Time ROI
+					tbody
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company2.svg', alt='company')
+								.name
+									span SkyWay
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/qtum.svg', alt='token type')
+								.name
+									span QTUM
+							td.ico-price
+								.dollar-price
+									span $3684.55
+								.divider
+								.currency-price
+									span BTC 55.4545645
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company1.svg', alt='company')
+								.name
+									span Digital Developers Fund
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/wings.svg', alt='token type')
+								.name
+									span Wings
+							td.ico-price
+								.dollar-price
+									span $2658.55
+								.divider
+								.currency-price
+									span BTC 1.45686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company3.svg', alt='company')
+								.name
+									span MyBit
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/darcus.svg', alt='token type')
+								.name
+									span Darcus
+							td.ico-price
+								.dollar-price
+									span $560.60
+								.divider
+								.currency-price
+									span BTC 0.00686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.negative 5%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company5.svg', alt='company')
+								.name
+									span Bowhead Health
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/adtoken.svg', alt='token type')
+								.name
+									span adToken
+							td.ico-price
+								.dollar-price
+									span $2658.55
+								.divider
+								.currency-price
+									span BTC 1.45686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.negative 2%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company4.svg', alt='company')
+								.name
+									span Hive Project
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/waves.svg', alt='token type')
+								.name
+									span Waves
+							td.ico-price
+								.dollar-price
+									span $10 000
+								.divider
+								.currency-price
+									span BTC 368.55129876
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+				a.extended-table(href='javascript:void(0)') Extended Market Pulse
+			.tab.currency-table#aggressive
+				table#aggressive-table
+					thead
+						tr
+							th Company
+							th Token Type
+							th ICO Price
+							th Cash-Out Pre-Sale
+							th Cash-Out Public
+							th All-Time ROI
+					tbody
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company4.svg', alt='company')
+								.name
+									span Hive Project
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/waves.svg', alt='token type')
+								.name
+									span Waves
+							td.ico-price
+								.dollar-price
+									span $10 000
+								.divider
+								.currency-price
+									span BTC 368.55129876
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company1.svg', alt='company')
+								.name
+									span Digital Developers Fund
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/wings.svg', alt='token type')
+								.name
+									span Wings
+							td.ico-price
+								.dollar-price
+									span $2658.55
+								.divider
+								.currency-price
+									span BTC 1.45686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company3.svg', alt='company')
+								.name
+									span MyBit
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/darcus.svg', alt='token type')
+								.name
+									span Darcus
+							td.ico-price
+								.dollar-price
+									span $560.60
+								.divider
+								.currency-price
+									span BTC 0.00686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.negative 5%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company2.svg', alt='company')
+								.name
+									span SkyWay
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/qtum.svg', alt='token type')
+								.name
+									span QTUM
+							td.ico-price
+								.dollar-price
+									span $3684.55
+								.divider
+								.currency-price
+									span BTC 55.4545645
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.positive 3%
+						tr
+							td.company
+								.image
+									img(src='./images/logos/company5.svg', alt='company')
+								.name
+									span Bowhead Health
+								.socials
+									a(href='javascript:void(0)')
+										i.fa.fa-slack(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-github-alt(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-facebook(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-twitter(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-paper-plane(aria-hidden='true')
+									a(href='javascript:void(0)')
+										i.fa.fa-btc(aria-hidden='true')
+								.website
+									a(href='javascript:void(0)') Website
+							td.token-type
+								.image
+									img(src='./images/tokens/adtoken.svg', alt='token type')
+								.name
+									span adToken
+							td.ico-price
+								.dollar-price
+									span $2658.55
+								.divider
+								.currency-price
+									span BTC 1.45686545
+							td.cash-out-sale
+								span 03.08.17 / 30%
+							td.cash-out-public
+								span 05.08.17 / 20%
+							td.all-time-roi
+								span.negative 2%
+				a.extended-table(href='javascript:void(0)') Extended Market Pulse

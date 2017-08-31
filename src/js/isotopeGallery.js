@@ -1,5 +1,5 @@
 // Module Isotope Gallery
-module.exports = function isotopeGallery() {
+module.exports = function isotopeGallery(destroy) {
 
   // init Isotope
   var $grid = $('#blog-gallery').isotope({
@@ -29,4 +29,8 @@ module.exports = function isotopeGallery() {
       $(this).addClass('is-checked');
     });
   });
+
+  if ( destroy === 'destroy' ) {
+    $grid.isotope('destroy');
+  }
 };

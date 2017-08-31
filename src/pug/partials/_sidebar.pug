@@ -1,4 +1,4 @@
-aside.sidebar
+aside.sidebar(data-page=page.name)
 	.navbar-left
 		button#menu-button.navbar-toggle(type='button')
 			span.icon-bar
@@ -7,33 +7,63 @@ aside.sidebar
 			img(src='./images/logotype.svg')
 			span.description Your Edge in Cryptocurrency Ecosystem
 	ul#menu-anchor-back
-		li.hidden(data-slide='2')
-			a.link-to(href='#homepage') Homepage
-		li.hidden(data-slide='3')
-			a.link-to(href='#membership') Value Proposition
-		li.hidden(data-slide='4')
-			a.link-to(href='#sale-table') Pre-Sale Table
-		li.hidden(data-slide='5')
-			a.link-to(href='#market-pulse') Market Pulse
-		li.hidden(data-slide='6')
-			a.link-to(href='#news') News
-		li.hidden(data-slide='7')
-			a.link-to(href='#services') Services
+		li(data-slide='2')
+			a.link-to(href='index.html', data-type='page-transition') Homepage
+		li(data-slide='3')
+			a.link-to(href='membership.html', data-type='page-transition') Value Proposition
+		li(data-slide='4')
+			a.link-to(href='sale-table.html', data-type='page-transition') Pre-Sale Table
+		li(data-slide='5')
+			a.link-to(href='market-pulse.html', data-type='page-transition') Market Pulse
+		li(data-slide='6')
+			a.link-to(href='news.html', data-type='page-transition') News
+		li(data-slide='7')
+			a.link-to(href='services.html', data-type='page-transition') Services
 	ul#menu-anchor
-		li.active(data-slide='1')
-			a.link-to(href='#membership') Value Proposition
-		li.hidden(data-slide='2')
-			a.link-to(href='#sale-table') Pre-Sale Tables
-		li.hidden(data-slide='3')
-			a.link-to(href='#market-pulse') Market Pulse
-		li.hidden(data-slide='4')
-			a.link-to(href='#news') News
-		li.hidden(data-slide='5')
-			a.link-to(href='#services') ICO Placement Services
-		li.hidden(data-slide='6')
-			a.link-to(href='#team') Team
+		li(data-slide='1')
+			a.link-to(href='membership.html', data-type='page-transition') Value Proposition
+		li(data-slide='2')
+			a.link-to(href='sale-table.html', data-type='page-transition') Pre-Sale Tables
+		li(data-slide='3')
+			a.link-to(href='market-pulse.html', data-type='page-transition') Market Pulse
+		li(data-slide='4')
+			a.link-to(href='news.html', data-type='page-transition') News
+		li(data-slide='5')
+			a.link-to(href='services.html', data-type='page-transition') ICO Placement Services
+		li(data-slide='6')
+			a.link-to(href='team.html', data-type='page-transition') Team
 	.copyright
 		span.year 2017
 		|
 		|
 		span.company ICLUB LTD. All rights reserved
+	#sidebar-navigation.left
+		ul
+			li
+				a(href='index.html', data-type='page-transition' , class=page.name === 'index' ? 'active' : '')
+					span
+				.navigation-tooltip.left Homepage
+			li
+				a(href='membership.html', data-type='page-transition', class=page.name === 'membership' ? 'active' : '')
+					span
+				.navigation-tooltip.left Exclusive Membership
+			li
+				a(href='sale-table.html', data-type='page-transition', class=page.name === 'sale-table' ? 'active' : '')
+					span
+				.navigation-tooltip.left Pre-Sale Table
+			li
+				a(href='market-pulse.html', data-type='page-transition', class=page.name === 'market-pulse' ? 'active' : '')
+					span
+				.navigation-tooltip.left Market Pulse
+			li
+				a(href='news.html', data-type='page-transition', class=page.name === 'news' || page.name === 'news-post' ? 'active' : '')
+					span
+				.navigation-tooltip.left News
+			li
+				a(href='services.html', data-type='page-transition', class=page.name === 'services' ? 'active' : '')
+					span
+				.navigation-tooltip.left ICO Placement Services
+			li
+				a(href='team.html', data-type='page-transition', class=page.name === 'team' ? 'active' : '')
+					span
+				.navigation-tooltip.left Team

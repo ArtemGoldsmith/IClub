@@ -38,10 +38,16 @@ module.exports = function() {
     }]
   };
 
-  var tf1 = new TableFilter('conservative-table', filtersConfig);
-  tf1.init();
-  var tf2 = new TableFilter('moderate-table', filtersConfig);
-  tf2.init();
-  var tf3 = new TableFilter('aggressive-table', filtersConfig);
-  tf3.init();
+  if ( $('#conservative-table').length ) {
+    var tf1 = new TableFilter('conservative-table', filtersConfig);
+    tf1.init();
+  }
+  if ( $('#moderate-table').length ) {
+    var tf2 = new TableFilter('moderate-table', filtersConfig);
+    tf2.init();
+  }
+  if ( $('#aggressive-table').length ) {
+    var tf3 = new TableFilter('aggressive-table', filtersConfig);
+    tf3.init();
+  }
 };

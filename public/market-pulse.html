@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Personal Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="title" content=""><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <!-- Restrict google from scanning info from Dmoz or YahooDir-->
+    <meta name="robots" content="noodp,noydir">
+    <!-- Author markup-->
+    <meta name="theme-color" content="#ffffff">
+    <!-- Personal Meta tags--><!--[if gte IE 6]>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="assets/plugins/respond.min.js"></script><![endif]-->
+    <title>IClub</title>
+    <!-- Styles-->
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2196f3">
+    <link href="css/template.css" rel="stylesheet">
+  </head>
+  <body data-page="market-pulse">
+    <div class="main-wrapper">
+      <div class="submain-wrapper" data-page="market-pulse">
+        <header class="header bg-white" data-page="market-pulse">
+          <nav class="navbar clearfix">
+            <div class="navbar-left">
+              <div class="back-title to-news"><a href="news.html" data-type="page-transition">News</a></div>
+              <div class="page-title market-pulse"><span>Market Pulse</span></div>
+              <div class="page-title team"><span>Team</span></div>
+              <div class="page-title q-and-a"><span>Q&A</span></div>
+              <div class="page-title contact"><span>Contact</span></div>
+              <div class="blog-categories">
+                <ul class="categories list-inline">
+                  <li class="active"><a href="javascript:void(0)" data-category="category">Category</a></li>
+                  <li><a href="javascript:void(0)" data-category="search">Search</a></li>
+                </ul>
+              </div>
+              <div class="blog-filter">
+                <ul class="filter list-inline">
+                  <li class="active"><a href="javascript:void(0)" data-filter=".ico-management">ICO Management</a></li>
+                  <li><a href="javascript:void(0)" data-filter=".cryptocurrency">Cryptocurrency</a></li>
+                  <li><a href="javascript:void(0)" data-filter=".analytics">Analytics</a></li>
+                  <li><a href="javascript:void(0)" data-filter=".business">Business</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-right">
+              <ul class="list-inline">
+                <li><a href="news.html" data-type="page-transition">Blog</a></li>
+                <li><a href="market-pulse.html" data-type="page-transition">Extended Market Pulse</a></li>
+                <li><a href="q-and-a.html" data-type="page-transition">Q&A</a></li>
+                <li><a href="contact-us.html" data-type="page-transition">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="search-field">
+              <div id="searchField">
+                <div class="field">
+                  <input id="searchInput" type="text" name="search" placeholder="What would you like to find?">
+                </div>
+                <div class="microphone"><a href="javascript:void(0)"><img src="./images/icons/microphone.svg" alt="close button"></a></div>
+                <div class="close-search"><a href="javascript:void(0)"><img src="./images/icons/close.svg" alt="close button"></a></div>
+                <div class="notification" id="speach"></div>
+                <div class="notification" id="warning"></div>
+              </div>
+            </div>
+          </nav>
+          <!--/.navbar-->
+        </header>
+        <aside class="sidebar" data-page="market-pulse">
+          <div class="navbar-left">
+            <button class="navbar-toggle" id="menu-button" type="button"><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand clearfix" href="/"><img src="./images/logotype.svg"><span class="description">Your Edge in Cryptocurrency Ecosystem</span></a>
+          </div>
+          <ul id="menu-anchor-back">
+            <li data-slide="2"><a class="link-to" href="index.html" data-type="page-transition">Homepage</a></li>
+            <li data-slide="3"><a class="link-to" href="membership.html" data-type="page-transition">Value Proposition</a></li>
+            <li data-slide="4"><a class="link-to" href="sale-table.html" data-type="page-transition">Pre-Sale Table</a></li>
+            <li data-slide="5"><a class="link-to" href="market-pulse.html" data-type="page-transition">Market Pulse</a></li>
+            <li data-slide="6"><a class="link-to" href="news.html" data-type="page-transition">News</a></li>
+            <li data-slide="7"><a class="link-to" href="services.html" data-type="page-transition">Services</a></li>
+          </ul>
+          <ul id="menu-anchor">
+            <li data-slide="1"><a class="link-to" href="membership.html" data-type="page-transition">Value Proposition</a></li>
+            <li data-slide="2"><a class="link-to" href="sale-table.html" data-type="page-transition">Pre-Sale Tables</a></li>
+            <li data-slide="3"><a class="link-to" href="market-pulse.html" data-type="page-transition">Market Pulse</a></li>
+            <li data-slide="4"><a class="link-to" href="news.html" data-type="page-transition">News</a></li>
+            <li data-slide="5"><a class="link-to" href="services.html" data-type="page-transition">ICO Placement Services</a></li>
+            <li data-slide="6"><a class="link-to" href="team.html" data-type="page-transition">Team</a></li>
+          </ul>
+          <div class="copyright"><span class="year">2017</span>
+            <span class="company">ICLUB LTD. All rights reserved</span>
+          </div>
+          <div class="left" id="sidebar-navigation">
+            <ul>
+              <li><a href="index.html" data-type="page-transition"><span></span></a>
+                <div class="navigation-tooltip left">Homepage</div>
+              </li>
+              <li><a href="membership.html" data-type="page-transition"><span></span></a>
+                <div class="navigation-tooltip left">Exclusive Membership</div>
+              </li>
+              <li><a href="sale-table.html" data-type="page-transition"><span></span></a>
+                <div class="navigation-tooltip left">Pre-Sale Table</div>
+              </li>
+              <li><a class="active" href="market-pulse.html" data-type="page-transition"><span></span></a>
+                <div class="navigation-tooltip left">Market Pulse</div>
+              </li>
+              <li><a href="news.html" data-type="page-transition"><span></span></a>
+                <div class="navigation-tooltip left">News</div>
+              </li>
+              <li><a href="services.html" data-type="page-transition"><span></span></a>
+                <div class="navigation-tooltip left">ICO Placement Services</div>
+              </li>
+              <li><a href="team.html" data-type="page-transition"><span></span></a>
+                <div class="navigation-tooltip left">Team</div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="section-wrapper">
+          <div class="section">
+            <div class="top-rating clearfix mt-150">
+              <div class="rating">
+                <div class="currency">
+                  <div class="image"><img src="./images/icons/bitcoin.svg" alt="currency"></div><span class="name">BTC</span>
+                </div>
+                <div class="values">
+                  <div class="price-dollar"><span>$3204.36</span></div>
+                  <div class="price-dollar-new positive"><span>$780</span></div>
+                  <div class="price-currency"><span class="name">BTC</span>
+                    <span class="price">386,45125623</span>
+                  </div>
+                </div>
+                <div class="chart-container">
+                  <canvas id="chart-bitcoin"></canvas>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="currency">
+                  <div class="image"><img class="top-3" src="./images/icons/ethereum.svg" alt="currency"></div><span class="name">ETH</span>
+                </div>
+                <div class="values">
+                  <div class="price-dollar"><span>$262.37</span></div>
+                  <div class="price-dollar-new positive"><span>$780</span></div>
+                  <div class="price-currency"><span class="name">ETH</span>
+                    <span class="price">120,45125623</span>
+                  </div>
+                </div>
+                <div class="chart-container">
+                  <canvas id="chart-ethereum"></canvas>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="currency">
+                  <div class="image"><img src="./images/icons/litecoin.svg" alt="currency"></div><span class="name">LTC</span>
+                </div>
+                <div class="values">
+                  <div class="price-dollar"><span>$45.40</span></div>
+                  <div class="price-dollar-new negative"><span>$25</span></div>
+                  <div class="price-currency"><span class="name">LTC</span>
+                    <span class="price">855,45125623</span>
+                  </div>
+                </div>
+                <div class="chart-container">
+                  <canvas id="chart-litecoin"></canvas>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="currency">
+                  <div class="image"><img src="./images/icons/xem.svg" alt="currency"></div><span class="name">XEM</span>
+                </div>
+                <div class="values">
+                  <div class="price-dollar"><span>$188.92</span></div>
+                  <div class="price-dollar-new positive"><span>$7</span></div>
+                  <div class="price-currency"><span class="name">XEM</span>
+                    <span class="price">85,45125623</span>
+                  </div>
+                </div>
+                <div class="chart-container">
+                  <canvas id="chart-xem"></canvas>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="currency">
+                  <div class="image"><img src="./images/icons/xmr.svg" alt="currency"></div><span class="name">XMR</span>
+                </div>
+                <div class="values">
+                  <div class="price-dollar"><span>$188.92</span></div>
+                  <div class="price-dollar-new positive"><span>$7</span></div>
+                  <div class="price-currency"><span class="name">XMR</span>
+                    <span class="price">10,45125623</span>
+                  </div>
+                </div>
+                <div class="chart-container">
+                  <canvas id="chart-xmr"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="strategy tab-panels"><strong>Investment Strategy</strong>
+              <ul class="list-inline">
+                <li class="active"><a href="javascript:void(0)" data-type="conservative">Conservative</a></li>
+                <li><a href="javascript:void(0)" data-type="moderate">Moderate</a></li>
+                <li><a href="javascript:void(0)" data-type="aggressive">Aggressive</a></li>
+              </ul>
+              <div class="tabs pb-50">
+                <div class="tab active currency-table" id="conservative">
+                  <table id="conservative-table">
+                    <thead>
+                      <tr>
+                        <th>Company</th>
+                        <th>Token Type</th>
+                        <th>ICO Price</th>
+                        <th>Cash-Out Pre-Sale</th>
+                        <th>Cash-Out Public</th>
+                        <th>All-Time ROI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company1.svg" alt="company"></div>
+                          <div class="name"><span>Digital Developers Fund</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/wings.svg" alt="token type"></div>
+                          <div class="name"><span>Wings</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$2658.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 1.45686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company2.svg" alt="company"></div>
+                          <div class="name"><span>SkyWay</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/qtum.svg" alt="token type"></div>
+                          <div class="name"><span>QTUM</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$3684.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 55.4545645</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company3.svg" alt="company"></div>
+                          <div class="name"><span>MyBit</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/darcus.svg" alt="token type"></div>
+                          <div class="name"><span>Darcus</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$560.60</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 0.00686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="negative">5%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company4.svg" alt="company"></div>
+                          <div class="name"><span>Hive Project</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/waves.svg" alt="token type"></div>
+                          <div class="name"><span>Waves</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$10 000</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 368.55129876</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company5.svg" alt="company"></div>
+                          <div class="name"><span>Bowhead Health</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/adtoken.svg" alt="token type"></div>
+                          <div class="name"><span>adToken</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$2658.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 1.45686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="negative">2%</span></td>
+                      </tr>
+                    </tbody>
+                  </table><a class="extended-table" href="javascript:void(0)">Extended Market Pulse</a>
+                </div>
+                <div class="tab currency-table" id="moderate">
+                  <table id="moderate-table">
+                    <thead>
+                      <tr>
+                        <th>Company</th>
+                        <th>Token Type</th>
+                        <th>ICO Price</th>
+                        <th>Cash-Out Pre-Sale</th>
+                        <th>Cash-Out Public</th>
+                        <th>All-Time ROI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company2.svg" alt="company"></div>
+                          <div class="name"><span>SkyWay</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/qtum.svg" alt="token type"></div>
+                          <div class="name"><span>QTUM</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$3684.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 55.4545645</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company1.svg" alt="company"></div>
+                          <div class="name"><span>Digital Developers Fund</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/wings.svg" alt="token type"></div>
+                          <div class="name"><span>Wings</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$2658.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 1.45686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company3.svg" alt="company"></div>
+                          <div class="name"><span>MyBit</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/darcus.svg" alt="token type"></div>
+                          <div class="name"><span>Darcus</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$560.60</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 0.00686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="negative">5%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company5.svg" alt="company"></div>
+                          <div class="name"><span>Bowhead Health</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/adtoken.svg" alt="token type"></div>
+                          <div class="name"><span>adToken</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$2658.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 1.45686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="negative">2%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company4.svg" alt="company"></div>
+                          <div class="name"><span>Hive Project</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/waves.svg" alt="token type"></div>
+                          <div class="name"><span>Waves</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$10 000</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 368.55129876</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                    </tbody>
+                  </table><a class="extended-table" href="javascript:void(0)">Extended Market Pulse</a>
+                </div>
+                <div class="tab currency-table" id="aggressive">
+                  <table id="aggressive-table">
+                    <thead>
+                      <tr>
+                        <th>Company</th>
+                        <th>Token Type</th>
+                        <th>ICO Price</th>
+                        <th>Cash-Out Pre-Sale</th>
+                        <th>Cash-Out Public</th>
+                        <th>All-Time ROI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company4.svg" alt="company"></div>
+                          <div class="name"><span>Hive Project</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/waves.svg" alt="token type"></div>
+                          <div class="name"><span>Waves</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$10 000</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 368.55129876</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company1.svg" alt="company"></div>
+                          <div class="name"><span>Digital Developers Fund</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/wings.svg" alt="token type"></div>
+                          <div class="name"><span>Wings</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$2658.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 1.45686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company3.svg" alt="company"></div>
+                          <div class="name"><span>MyBit</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/darcus.svg" alt="token type"></div>
+                          <div class="name"><span>Darcus</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$560.60</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 0.00686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="negative">5%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company2.svg" alt="company"></div>
+                          <div class="name"><span>SkyWay</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/qtum.svg" alt="token type"></div>
+                          <div class="name"><span>QTUM</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$3684.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 55.4545645</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="positive">3%</span></td>
+                      </tr>
+                      <tr>
+                        <td class="company">
+                          <div class="image"><img src="./images/logos/company5.svg" alt="company"></div>
+                          <div class="name"><span>Bowhead Health</span></div>
+                          <div class="socials"><a href="javascript:void(0)"><i class="fa fa-slack" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-github-alt" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-paper-plane" aria-hidden="true"></i></a><a href="javascript:void(0)"><i class="fa fa-btc" aria-hidden="true"></i></a></div>
+                          <div class="website"><a href="javascript:void(0)">Website</a></div>
+                        </td>
+                        <td class="token-type">
+                          <div class="image"><img src="./images/tokens/adtoken.svg" alt="token type"></div>
+                          <div class="name"><span>adToken</span></div>
+                        </td>
+                        <td class="ico-price">
+                          <div class="dollar-price"><span>$2658.55</span></div>
+                          <div class="divider"></div>
+                          <div class="currency-price"><span>BTC 1.45686545</span></div>
+                        </td>
+                        <td class="cash-out-sale"><span>03.08.17 / 30%</span></td>
+                        <td class="cash-out-public"><span>05.08.17 / 20%</span></td>
+                        <td class="all-time-roi"><span class="negative">2%</span></td>
+                      </tr>
+                    </tbody>
+                  </table><a class="extended-table" href="javascript:void(0)">Extended Market Pulse</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-left-menu" id="leftMenu">
+      <button class="close navbar-toggle" type="button"><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <ul>
+              <li><a href="#homepage">Exclusive pre-sale ICO access</a></li>
+              <li><a href="#homepage">Investment screening</a></li>
+              <li><a href="#homepage">Risk management</a></li>
+              <li><a href="#homepage">Investment entry</a></li>
+              <li><a href="#homepage">Management for profit</a></li>
+              <li><a href="#homepage">Profit lock-in and exit</a></li>
+              <li><a href="#homepage">Cryptocurrency to cash conversion</a></li>
+            </ul>
+            <!--/.navbar-nav-->
+    </div>
+    <footer></footer>
+    <!--/footer-->
+    <!-- JavaScript-->
+    <!-- IE console.log fix-->
+    <script src="assets/plugins/consoleFix.js" type="text/javascript"></script>
+    <!-- jQuery-->
+    <script src="assets/plugins/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <!-- IE fix placeholders in inputs and textarea-->
+    <script src="assets/plugins/placeholder.js" type="text/javascript"></script>
+    <!-- Bootstrap-->
+    <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Modernizr-->
+    <script src="assets/plugins/modernizr.js" type="text/javascript"></script>
+    <!-- Custom Scroll Bar-->
+    <script src="assets/plugins/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <!-- Owl Carousel-->
+    <script src="assets/plugins/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+    <!-- Full Page-->
+    <script src="assets/plugins/scrolloverflow.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/fullPage.js/dist/jquery.fullpage.extensions.min.js" type="text/javascript"></script>
+    <!-- Chart Js-->
+    <script src="assets/plugins/chart.min.js" type="text/javascript"></script>
+    <!-- Table Filter-->
+    <script src="assets/plugins/TableFilter/dist/tablefilter/tablefilter.js" type="text/javascript"></script>
+    <!-- Validation-->
+    <script src="assets/plugins/bootstrap-validator/dist/validator.min.js" type="text/javascript"></script>
+    <!-- Isotope-->
+    <script src="assets/plugins/isotope.pkgd.min.js" type="text/javascript"></script>
+    <!-- Main JS file-->
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

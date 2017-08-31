@@ -6,10 +6,11 @@ block vars
 html(lang="en")
 	head
 		include ../partials/_head
-	body
-		.main-wrapper(class=page.name + page.count)
-			block header
-			block sidebar
-			block main
-			block customizer
-			block footer
+	body(data-page=page.name)
+		.main-wrapper
+			.submain-wrapper(data-page=page.name)
+				block header
+				block sidebar
+				.section-wrapper
+					block main
+		block footer

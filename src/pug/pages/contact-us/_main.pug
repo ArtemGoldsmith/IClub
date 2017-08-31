@@ -1,0 +1,28 @@
+.section
+	.content-wrapper
+		.contact-us.clearfix
+			.logotype
+				img(src='./images/logotype-small.svg', alt='logotype')
+				.place
+					span USA, New York
+			form.contact-form(data-toggle='validator', role='form')
+				.form-group.has-feedback
+					input#inputName.form-control(name='Name', type='text', required, data-error='This field is required')
+					label.control-label(for='inputName') Name
+					.help-block.with-errors
+				.form-group.has-feedback
+					input#inputPhone.form-control(name='Phone', type='phone', required, data-error='This field is required')
+					label.control-label(for='inputPhone') Phone
+					.help-block.with-errors
+				.form-group.has-feedback
+					input#inputEmail.form-control(name='Email', type='email', required, data-error='Email address is incorrect')
+					label.control-label(for='inputEmail') Email
+					.help-block.with-errors
+				.form-group.has-feedback
+					textarea#inputMessage.form-control(name='Message', required, data-error='This field is required')
+					label.control-label(for='inputName') Message
+					.help-block.with-errors
+				button(type='submit') Send
+			.amazing-project
+				h2 Let's Create Amazing Project...
+				.text iClub 2017

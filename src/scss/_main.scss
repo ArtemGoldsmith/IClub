@@ -43,6 +43,69 @@ body {
   //overflow: hidden !important;
 }
 
+.submain-wrapper {
+  position: relative;
+  background-color: $white;
+  &.slide-down {
+    z-index: 1;
+    //opacity: 0;
+    transition: transform .4s ease-in-out, opacity .2s ease-in;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 101;
+      width: 100%;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      background: rgba(0,0,0,.5);
+      @include crossBrowser(transition, background .2s ease-in-out);
+    }
+  }
+  &.slide-up {
+    z-index: 2;
+    @include crossBrowser(transition, .4s ease-in-out);
+  }
+
+  &[data-page='news'] {
+    background: #EFEFEF;
+  }
+  &[data-page='news-post'] {
+    background: #EFEFEF;
+  }
+  &[data-page='services'] {
+    background-image: url('../images/background1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+$color-1: #4089a6; // Steel Blue
+$color-2: #283040; // Ebony Clay
+$color-3: #ffffff; // White
+.cd-cover-layer {
+  /* layer that covers the content when the animation is triggered */
+  position: fixed;
+  @include center;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  opacity: 0;
+  visibility: hidden;
+  background-color: $color-1;
+  transition: opacity 0.4s 0.4s, visibility 0s 0.8s;
+
+  .cd-about & {
+    background-color: $color-2;
+  }
+
+  .page-is-changing & {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 300;
   strong {
@@ -182,7 +245,7 @@ button {
 
 .header,
 header {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -202,6 +265,10 @@ header {
     }
     .navbar-left {
       display: none;
+    }
+    .navbar-right {
+      opacity: 0;
+      visibility: hidden;
     }
     .search-field {
       opacity: 1;
@@ -275,6 +342,61 @@ header {
       float: left;
     }
   }
+  &[data-page='market-pulse'] {
+    .page-title {
+      &.market-pulse {
+        display: block;
+      }
+    }
+  }
+  &[data-page='news'] {
+    background: 0 0;
+    .navbar {
+      .blog-categories {
+        display: block;
+      }
+      .blog-filter {
+        display: block;
+      }
+    }
+  }
+  &[data-page='news-post'] {
+    background: 0 0;
+    .back-title {
+      &.to-news {
+        display: block;
+      }
+    }
+    .navbar {
+      .blog-categories {
+        display: block;
+      }
+      .blog-filter {
+        display: block;
+      }
+    }
+  }
+  &[data-page='team'] {
+    .page-title {
+      &.team {
+        display: block;
+      }
+    }
+  }
+  &[data-page='q-and-a'] {
+    .page-title {
+      &.q-and-a {
+        display: block;
+      }
+    }
+  }
+  &[data-page='contact'] {
+    .page-title {
+      &.contact {
+        display: block;
+      }
+    }
+  }
 }
 
 .sidebar,
@@ -286,6 +408,136 @@ aside {
   left: 0;
   top: 0;
   @include crossBrowser(transition, .4s ease-in);
+  &[data-page='index'] {
+    #menu-anchor {
+      li {
+        &[data-slide='1'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &[data-page='membership'] {
+    #menu-anchor-back {
+      li {
+        &[data-slide='2'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    #menu-anchor {
+      li {
+        &[data-slide='2'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &[data-page='sale-table'] {
+    #menu-anchor-back {
+      li {
+        &[data-slide='3'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    #menu-anchor {
+      li {
+        &[data-slide='3'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &[data-page='market-pulse'] {
+    #menu-anchor-back {
+      li {
+        &[data-slide='4'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    #menu-anchor {
+      li {
+        &[data-slide='4'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &[data-page='news'] {
+    background: $white;
+    #menu-anchor-back {
+      li {
+        &[data-slide='5'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    #menu-anchor {
+      li {
+        &[data-slide='5'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &[data-page='news-post'] {
+    background: $white;
+    #menu-anchor-back {
+      li {
+        &[data-slide='5'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    #menu-anchor {
+      li {
+        &[data-slide='5'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &[data-page='services'] {
+    #menu-anchor-back {
+      li {
+        &[data-slide='6'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    #menu-anchor {
+      li {
+        &[data-slide='6'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+  &[data-page='team'] {
+    #menu-anchor-back {
+      li {
+        &[data-slide='7'] {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
   .navbar-brand {
     display: block;
     max-width: 185px;
@@ -366,6 +618,13 @@ aside {
     margin: 0;
     list-style: none;
     li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      min-width: 300px;
+      @include crossBrowser(transition, .2s ease-in);
       .link-to {
         text-transform: uppercase;
         font-weight: 700;
@@ -388,6 +647,13 @@ aside {
     margin: 0;
     list-style: none;
     li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      min-width: 300px;
+      @include crossBrowser(transition, .2s ease-in);
       .link-to {
         text-transform: uppercase;
         font-weight: 700;
@@ -520,6 +786,7 @@ aside {
 .navbar-right {
   display: flex;
   float: right;
+  @include crossBrowser(transition, .2s ease-in);
   ul {
     margin-right: 10px;
     li {
@@ -571,7 +838,7 @@ aside {
   &.opened {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-5%);
+    transform: translateX(0);
   }
   .navbar-toggle {
     background: 0 0;
@@ -627,19 +894,30 @@ aside {
   }
 }
 
-#fp-nav {
+#sidebar-navigation {
   position: relative;
+  z-index: 100;
+  margin-top: -75px;
+  top: 50%;
+  opacity: 1;
+  left: 17px;
+  max-width: 200px;
   ul {
+    margin: 0;
+    padding: 0;
     li {
-      width: 4px;
-      height: 24px;
+      width: 100%;
+      height: 25px;
+      display: block;
+      margin: 7px;
+      position: relative;
       &:hover {
         a {
           &.active {
             span {
               height: 22px;
               width: 4px;
-              margin: -17px 0 0 6px;
+              margin: -12px 0 0 6px;
               border-radius: 50px;
               background: $black;
             }
@@ -647,46 +925,65 @@ aside {
           span {
             height: 22px;
             width: 4px;
-            margin: -17px 0 0 6px;
+            margin: -12px 0 0 6px;
             border-radius: 50px;
             background: $black;
           }
-          & + .fp-tooltip {
+          & + .navigation-tooltip {
             color: $black;
           }
         }
       }
-      &:nth-last-child(2),
-      &:last-child {
-        display: none;
-      }
       a {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        text-decoration: none;
         &.active {
           span {
             height: 22px;
             width: 4px;
-            margin: -17px 0 0 6px;
+            margin: -12px 0 0 6px;
             border-radius: 50px;
             background: $black;
           }
-          & + .fp-tooltip {
+          & + .navigation-tooltip {
             color: $black;
           }
         }
         span {
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          top: 50%;
+          border: 0;
           height: 22px;
           width: 4px;
-          margin: -17px 0 0 6px;
+          margin: -12px 0 0 6px;
           border-radius: 50px;
           background: #b2b2b2;
           @include crossBrowser(transition, all .3s ease-in-out);
         }
       }
-      .fp-tooltip {
+      .navigation-tooltip {
         width: auto;
         opacity: 1;
         color: #b2b2b2;
+        position: absolute;
+        top: 5px;
+        font-size: 14px;
+        white-space: nowrap;
+        max-width: 220px;
+        overflow: hidden;
+        display: block;
+        cursor: pointer;
         @include crossBrowser(transition, all .3s ease-in-out!important);
+        &.left {
+          left: 20px;
+        }
       }
     }
   }
@@ -722,7 +1019,8 @@ aside {
 .info-slider {
   width: 70%;
   margin-left: 330px;
-  margin-top: 150px;
+  position: absolute;
+  bottom: 30px;
   .item {
     padding-left: 5px;
   }
@@ -1181,16 +1479,17 @@ aside {
   }
 }
 
+.section-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .section {
+  width: 100%;
   padding: 0!important;
   @include crossBrowser(transition, all .4s ease-in-out);
-  &[data-anchor="services"] {
-      background: url('../images/background1.png') no-repeat 50% 50%;
-      background-size: cover;
-  }
-  &[data-anchor="news"] {
-    background-color: #EFEFEF;
-  }
 }
 
 .toggler-button {

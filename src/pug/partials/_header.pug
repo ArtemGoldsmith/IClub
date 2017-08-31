@@ -1,8 +1,10 @@
-header.header.bg-white
+header(data-page=page.name, class=page.name === 'services'
+	|| page.name === 'news' || page.name === 'news-post'
+	? 'header' : 'header bg-white')
 	nav.navbar.clearfix
 		.navbar-left
 			.back-title.to-news
-				a(href='javascript:void(0)', onclick='$.fn.fullpage.moveTo(\'news\', 0);') News
+				a(href='news.html', data-type='page-transition') News
 			.page-title.market-pulse
 				span Market Pulse
 			.page-title.team
@@ -30,23 +32,23 @@ header.header.bg-white
 		.navbar-right
 			ul.list-inline
 				li
-					a(href='#news') Blog
+					a(href='news.html', data-type='page-transition') Blog
 				li
-					a(href='#market-pulse') Extended Market Pulse
+					a(href='market-pulse.html', data-type='page-transition') Extended Market Pulse
 				li
-					a(href='#q-and-a') Q&A
+					a(href='q-and-a.html', data-type='page-transition') Q&A
 				li
-					a(href='#contact-us') Contact Us
+					a(href='contact-us.html', data-type='page-transition') Contact Us
 		.search-field
 			#searchField
 				.field
 					input#searchInput(type='text', name='search', placeholder='What would you like to find?')
 				.microphone
 					a(href='javascript:void(0)')
-						img(src='../images/icons/microphone.svg', alt='close button')
+						img(src='./images/icons/microphone.svg', alt='close button')
 				.close-search
 					a(href='javascript:void(0)')
-						img(src='../images/icons/close.svg', alt='close button')
+						img(src='./images/icons/close.svg', alt='close button')
 				.notification#speach
 				.notification#warning
 	///.navbar
